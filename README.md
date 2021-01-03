@@ -25,6 +25,28 @@ docker run --rm \
     hotio/nzbhydra2
 ```
 
+Compose:
+
+```yaml
+version: "3.7"
+
+services:
+  nzbhydra2:
+    container_name: nzbhydra2
+    image: hotio/nzbhydra2
+    ports:
+      - "5076:5076"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - UMASK=002
+      - TZ=Etc/UTC
+      - ARGS
+      - DEBUG=no
+    volumes:
+      - /<host_folder_config>:/config
+```
+
 ## Tags
 
 | Tag                | Upstream            | Version | Build |
