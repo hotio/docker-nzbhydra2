@@ -47,4 +47,4 @@ services:
 
 ## Tags
 
-Go [here](https://hotio.dev/containers-overview/#hotionzbhydra2) to see all available tags.
+Go [here](https://hotio.dev/tags-overview/#hotionzbhydra2) to see all available tags.
